@@ -1,0 +1,346 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+button[type="button"] {
+  background-color: #4b31cf;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="button"]:hover {
+  background-color: #6495ed;
+}
+
+button[type="submit"] {
+  background-color: #4b31cf;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #6495ed;
+}
+
+/* Navigation bar */
+nav {
+  background-color: #8b0a50;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero section */
+/* .hero {
+            background-image: url('../Images/bg_img.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        } */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  animation: backgroundSlideshow 15s infinite;
+  /* Change background every 15s */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Animation for changing background images */
+@keyframes backgroundSlideshow {
+  13% {
+    background-image: url("../Images/bg1.jpg");
+    /* Image 1 */
+  }
+
+  33% {
+    background-image: url("../Images/bg4.jpg");
+    /* Image 2 */
+  }
+
+  53% {
+    background-image: url("../Images/bg3.jpg");
+    /* Image 3 */
+  }
+
+  73% {
+    background-image: url("../Images/bg5.jpg");
+    /* Image 4 */
+  }
+
+  83% {
+    background-image: url("../Images/bg2.jpg");
+    /* Image 5 */
+  }
+
+  100% {
+    background-image: url("../Images/bg1.jpg");
+    /* Loop back to Image 1 */
+  }
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero a {
+  padding: 15px 30px;
+  background-color: #e67e22;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.hero a:hover {
+  background-color: #d35400;
+}
+
+/* Featured categories */
+.categories {
+  padding: 0px 0px 50px 0px;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.category-item {
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  width: 200px;
+  height: 300px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.3s;
+  text-align: center;
+  position: relative;
+}
+
+.category-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.category-item h3,
+.category-item a {
+  position: relative;
+  z-index: 2;
+}
+
+.category-item:hover {
+  transform: scale(1.05);
+}
+
+.category-item h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.category-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.category-item a:hover {
+  color: #e67e22;
+}
+/* 
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  animation: marquee 10s linear infinite;
+  
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+} */
+
+/* Footer */
+footer {
+  background-color: #8b0a50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.shop_now a {
+  font-size: 14px;
+  color: #8b0a50;
+  background-color: #f8f8f8;
+  /* Initial color */
+  padding-top: 2px;
+  animation: hueAnimation 0.5s infinite;
+  /* Apply the hue animation */
+  text-decoration: none;
+  /* Remove underline if desired */
+}
+
+@keyframes hueAnimation {
+  0% {
+    filter: hue-rotate(0deg);
+    /* Start with no rotation */
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+    /* Complete a full rotation */
+  }
+}
+
+.shop_now a:hover {
+  color: #e67e22;
+  /* Change color on hover, if desired */
+}
+
+.bill-button {
+  background-color: #4020e0;
+  color: white;
+  padding: 15px 32px;
+  font-size: 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.bill-button:hover {
+  background-color: #6495ed;
+}
+
+.success-message {
+  margin-top: 20px;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.go-homepage {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+marquee{
+  padding-top: 20px;
+  font-size: 25px;
+  font-weight: 800px;
+}

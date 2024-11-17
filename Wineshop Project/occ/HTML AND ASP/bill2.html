@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bill Generation</title>
+  <link rel="stylesheet" href="style3.css"> 
+</head>
+<body>
+    <form name="f" method="POST" action="appointments2.html">
+  <h2>Bill Summary</h2>
+  <div id="billSummary"></div>
+
+  <script>
+    // Prices for each service
+    const servicePrices = {
+      "Haircut": 20,
+      "Facial": 50,
+      "Manicure": 30,
+      "Hair Styling": 40,
+      "Threading": 10,
+      "Spa treatments": 100,
+      "Kertian": 120,
+      "Makeup": 80,
+      "Bridal Makeup": 200
+    };
+
+    // Function to fetch query parameters from the URL
+    function getQueryParams() {
+      const params = new URLSearchParams(window.location.search);
+      return {
+        name: params.get("n"),
+        email: params.get("e"),
+        service: params.get("s"),
+        date: params.get("d"),
+        time: params.get("t")
+      };
+    }
+
+    // Function to generate bill
+    function generateBill() {
+      const formData = getQueryParams();
+      const serviceSelected = formData.service;
+      const servicePrice = servicePrices[serviceSelected] || 0;
+
+      // Display the bill
+      const billSummary = `
+        <p>Customer Name: ${formData.name}</p>
+        <p>Email: ${formData.email}</p>
+        <p>Service Selected: ${serviceSelected}</p>
+        <p>Preferred Date: ${formData.date}</p>
+        <p>Preferred Time: ${formData.time}</p>
+        <h3>Total Bill: $${servicePrice}</h3>
+      `;
+
+      document.getElementById("billSummary").innerHTML = billSummary;
+    }
+
+    // Call the function to display the bill
+    generateBill();
+  </script>
+  </form>
+</body>
+</html>

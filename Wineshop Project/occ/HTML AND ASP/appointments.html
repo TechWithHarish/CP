@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Beauty Parlour Management</title>
+        <link rel="stylesheet" href="style3.css">
+    </head>    
+    <body>
+<div>   
+    <section id="appointments">
+        <center><h2><u>Book an Appointment</u></h2>
+        
+        <form name="f" method="post" action="appointment2sasp.asp">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+       <label for="service">Select Service:</label>
+            <select id="service" name="service">
+                <option value="">
+                <option value="Haircut">Haircut</option>
+                <option value="Facial">Facial</option>
+                <option value="manicure">Manicure & Pedicure</option>
+                <option value="Hair Styling">Hair Styling</option>
+                <option value="Threading">Threading</option>
+                <option value="Spa treatments">Spa treatments</option>
+                <option value="Kertian">Kertian</option>
+                <option value="Makeup">Makeup</option>
+                <option value="Bridal Makeup">Bridal Makeup</option>
+            </select>
+
+        <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+        <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required>
+
+        <center><button type="Submit">Book Now</button>
+            <button type="Reset">Reset</button></center>
+        </form>
+    </center>
+    </section>
+</div>
+</body>
+</html>

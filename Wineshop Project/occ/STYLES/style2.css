@@ -1,0 +1,176 @@
+* {
+    margin: 0.5;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  
+  body {
+    background-image: url(E:/nandhini/rock.jpg);
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center ;
+  }
+  
+  
+  header {
+    background-color: #ffc1cc;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  header p {
+    font-size: 1.2rem;
+    font-weight: 10px;
+  }
+  
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: wavy;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #e91e63;
+  }
+  
+  
+  .intro {
+    background-image: url('E:/nandhini/parlour4.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(228, 46, 85);
+    text-align: center;
+    padding:0 5px;
+  }
+  
+  .intro h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  .intro p {
+    font-size: 1.2rem;
+    margin-top:10px;
+  }
+  .ss{
+    text-align: center;
+  }
+  .sb{
+    padding:10p 20px;
+    border-radius: 5px;
+    color: gray;
+    cursor:pointer;
+  }
+  .sb:hover{
+    background-color: whitesmoke;
+    transform: scale(1.05);
+  }
+  
+  .services {
+    text-align:center;
+    padding: 40px;
+  }
+  .services h2 {
+    font-size: 2rem;
+    color:#fff;
+    margin-bottom: 20px;
+  }
+  
+  .service-card {
+    display: inline-block;
+    margin: 10px;
+    width: 35%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .service-card h3 {
+    padding: 15px;
+    font-size: 1.5rem;
+    color: #e91e63;
+  }
+  
+  .service-card p {
+    padding: 0 15px 15px;
+    color: #666;
+  }
+
+  .price {
+    font-weight: bold;
+    color:#333;
+  }
+
+  .buy-btn {
+    display: block;
+    margin: 10px;
+    width: 40%;
+    color: #fff;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    cursor:pointer;
+    transition: background-color 0.3s;
+    padding:10px;
+  }
+  .buy-btn:hover{
+    background-color:#ffc1cc;
+  }
+  footer {
+    background-color:#333;
+    padding: 2px;
+    text-align: center;
+    color: white;
+  }
+  
+  footer p {
+    margin: 10px 0;
+  }
+
+  footer a {
+    text-decoration: double;
+    color:white;
+    transition: color 0.3s;
+  }
+  
+  footer a:hover {
+    color: #fff;
+  }

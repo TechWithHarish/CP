@@ -1,0 +1,273 @@
+* {
+    margin: 0.5;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  
+  body {
+    background-color: #ffc1cc;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    background-size: contain;
+  }
+  
+  
+  header {
+    background-color: #ffc1cc;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-style: italic;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-weight: bold;
+    color: black;
+  }
+  header p {
+    font-size: 1.2rem;
+    font-weight: 10px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: wavy;
+    font-weight: 600;
+    transition: color 0.3s;
+    font-size: 1.5rem;
+  }
+  
+  nav a:hover {
+    color: #e91e63;
+  }
+  
+  
+  .intro {
+    background-image: url('images.jfif'); 
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(228, 46, 85);
+    text-align: center;
+    padding:0 5px;
+  }
+  
+  .intro h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: rgb(238, 225, 225);
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: black;
+    font-style: italic;
+  }
+  .intro p {
+    font-size: 1.2rem;
+    margin-top:10px;
+  }
+  .ss{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .sb{
+    padding:10p 20px;
+    border-radius: 5px;
+    color: gray;
+    cursor:pointer;
+    font-size: 1.5rem;
+  }
+  .sb:hover{
+    background-color: whitesmoke;
+    transform: scale(1.05);
+  }
+  
+  .services {
+    text-align:center;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+  }
+  .services h2 {
+    font-size: 2rem;
+    color:#fff;
+    margin-bottom: 20px;
+  }
+  
+  .service-card {
+    display: inline-block;
+    margin: 10px;
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .service-card h3 {
+    padding: 15px;
+    font-size: 1.5rem;
+    color: #e91e63;
+  }
+  
+  .service-card p {
+    padding: 0 15px 15px;
+    color: #666;
+  }
+
+  .price {
+    font-weight: bold;
+    color:#333;
+  }
+
+  .buy-btn {
+    display: inline-block;
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    cursor:pointer;
+    transition: background-color 0.1s;
+    padding:10px;
+    color:#333;
+  }
+  .buy-btn:hover{
+    background-color:#ffc1cc;
+  }
+
+  #contact h2{
+    color: #ddd;
+    display: grid;
+    gap: 3px;
+    padding: 1.2em;
+    font-size: 2.5rem;
+  }
+
+  #contact{
+    display: inline-block;
+    margin: 10px;
+    width: 80rem;
+    height: 500px;
+    background-color: rgb(59, 57, 57);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;  
+  }
+
+  #contact p{
+    color: #ddd;
+    gap: 5px;
+    padding: 0.8em;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  #contact p{
+    text-align: center;
+  }
+    
+
+  #appointments h2{
+    color: black;
+    font-size: 2.5rem;
+    font-style: italic;
+  }
+
+form {
+    display:grid;
+    gap: 2px;
+    padding: 0.5em;
+    width: 50%;
+    text-align: left;
+}
+
+form label {
+    font-weight: bold;
+    font-size: 1.5rem;
+    gap: 1rem;
+}
+
+form input, form select, form button {
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #f8b400;
+    border-radius: 1rem;
+    color: #fff;
+    cursor: pointer;
+    width: 15%;
+}
+
+form button:hover {
+    background-color: #e08d00;
+}
+
+address {
+    font-style: normal;
+    text-align: left;
+}
+
+#contactus{
+  height: 20%;
+}
+
+  footer {
+    background-color:#333;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    bottom:0%;
+    height: 20%;
+  }
+  
+  footer p {
+    margin: 5px;
+    color:white;
+  }
+
+  footer a {
+    text-decoration: double;
+    color:white;
+    transition: color 0.3s;
+  }
+  
+  footer a:hover {
+    color: #fff;
+  }
+
+  

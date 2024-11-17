@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <!-- <title>Contact Us</title>
+    <link rel="stylesheet" href="../Css/index.css"> -->
+    <link rel="stylesheet" href="../Css/contact_us.css">
+    <link rel="stylesheet" href="../Css/home.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <h1 style="color: white;">Wine Shop</h1>
+        </div>
+        <nav class="navbar" style="margin-top:15px;">
+            <form action="../Html/place_order.html">
+                <ul>
+                    <li style="margin-top:9px;"><a href="../Html/wineshop_index.html">Home</a></li>
+                    <li style="margin-top:9px;"><a href="../Html/products.html">Products</a></li>
+                    <li style="margin-top:9px;"><a href="../Html/about_us.html">About Us</a></li>
+                    <li style="margin-top:9px;"><a href="../Html/contact_us.html">Contact</a></li>
+                    <li style="margin-top:9px;"><a href="../Html/billsearch.html">Bill Search</a></li>
+                    <li style="margin-top:9px;" class="shop_now"><a href="../Html/place_order.html">SHOP NOW</a></li>
+                </ul>
+            </form>
+        </nav>
+    </nav>
+
+
+    <div class="contact-us-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to reach out to us using the form below.</p>
+
+        <form action="../Html/contactasp.asp" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message here" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+        <div class="contact-info">
+            <h3>Our Address:</h3>
+            <p>123 Wine Street, Grapevine City, CA 90210</p>
+            <h3>Phone:</h3>
+            <p>(123) 456-7890</p>
+            <h3>Email:</h3>
+            <p>contact@thewineshop.com</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 The Wine Shop. All rights reserved.</p>
+            <p>Contact us: info@wineshop.com | +123 456 7890</p>
+        </div>
+    </footer>
+</body>
+
+</html>

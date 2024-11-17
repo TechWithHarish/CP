@@ -1,0 +1,78 @@
+/* Contact Us Page Styles */
+.contact-us-section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #8b0a50;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px #f7f7f7;
+}
+
+.contact-us-section h2 {
+  text-align: center;
+  color: #f7f7f7;
+  margin-bottom: 20px;
+}
+
+.contact-us-section p {
+  text-align: center;
+  font-size: 18px;
+  color: #f7f7f7;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 16px;
+  color: #f7f7f7;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+button[type="submit"] {
+  background-color: #4b31cf;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #6495ed;
+}
+
+/* Contact Info Styles */
+.contact-info {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.contact-info h3 {
+  color: #f7f7f7;
+  margin-bottom: 5px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  color: #f7f7f7;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <link rel="stylesheet" href="../Css/index.css"> -->
+    <link rel="stylesheet" href="../Css/products.css">
+    <link rel="stylesheet" href="../Css/home.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <h1 style="color: white;">Wine Shop</h1>
+        </div>
+        <nav class="navbar">
+            <form action="../Html/place_order.html">
+                <ul>
+                    <li style="margin-top:9px;"><a href="../Html/wineshop_index.html">Home</a></li>
+                    <li style="margin-top:9px;"><a href="../Html/products.html">Products</a></li>
+                    <li style="margin-top:9px;"><a href="../Html/about_us.html">About Us</a></li>
+                    <li style="margin-top:9px;"><a href="../Html/contact_us.html">Contact</a></li>
+                    <li style="margin-top:9px;"><a href="../Html/billsearch.html">Bill Search</a></li>
+                    <li style="margin-top:9px;" class="shop_now"><a href="../Html/place_order.html">SHOP NOW</a></li>
+                </ul>
+            </form>
+        </nav>
+    </nav>
+
+    <!-- Customer Details Container -->
+    <div class="customer-details-container">
+        <h3 style="padding-left: 570px;">Customer Information</h3>
+        <form action="place_order.asp" method="post">
+            <div class="customer-info">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="customer_name" required style="padding-left: 10px;">
+                <br>
+                <label for="address">Address:</label>
+                <textarea id="address" name="customer_address" rows="3" required></textarea>
+            </div>
+
+    </div>
+
+    <!-- Wine product list -->
+    <form action="place_order.asp" method="post">
+        <div class="container">
+            <div class="wine-row">
+                <!-- Product 1 -->
+                <div class="wine-item">
+                    <img src="../Images/cabernet sauvignon.jpg" alt="cabernet sauvignon">
+                    <div class="wine-info">
+                        <h4>Cabernet Sauvignon</h4>
+                        <p class="price">$20.00</p>
+                        <input type="hidden" name="product_name_1" value="Cabernet Sauvignon">
+                        <input type="hidden" name="product_price_1" value="20.00">
+                        <label for="quantity_1">Quantity:</label>
+                        <input type="number" name="quantity_1" value="0" min="0">
+                    </div>
+                </div>
+
+
+                <!-- Product 2 -->
+                <div class="wine-item">
+                    <img src="../Images/merlot.jpg" alt="merlot">
+                    <div class="wine-info">
+                        <h4>Merlot</h4>
+                        <p class="price">$18.00</p>
+                        <input type="hidden" name="product_name_2" value="Merlot">
+                        <input type="hidden" name="product_price_2" value="18.00">
+                        <label for="quantity_2">Quantity:</label>
+                        <input type="number" name="quantity_2" value="0" min="0">
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="wine-item">
+                    <img src="../Images/shiraz.jpg" alt="Shiraz">
+                    <div class="wine-info">
+                        <h4>Shiraz</h4>
+                        <p class="price">$22.00</p>
+                        <input type="hidden" name="product_name_3" value="Shiraz">
+                        <input type="hidden" name="product_price_3" value="22.00">
+                        <label for="quantity_3">Quantity:</label>
+                        <input type="number" name="quantity_3" value="0" min="0">
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="wine-item">
+                    <img src="../Images/pinot noir.jpg" alt="Pinot Noir">
+                    <div class="wine-info">
+                        <h4>Pinot Noir</h4>
+                        <p class="price">$18.00</p>
+                        <input type="hidden" name="product_name_4" value="Pinot Noir">
+                        <input type="hidden" name="product_price_4" value="18.00">
+                        <label for="quantity_4">Quantity:</label>
+                        <input type="number" name="quantity_4" value="0" min="0">
+                    </div>
+                </div>
+
+
+                <!-- Product 5 -->
+                <div class="wine-item">
+                    <img src="../Images/malbec.jpg" alt="Malbec">
+                    <div class="wine-info">
+                        <h4>Malbec</h4>
+                        <p class="price">$14.95</p>
+                        <input type="hidden" name="product_name_5" value="Malbec">
+                        <input type="hidden" name="product_price_5" value="14.95">
+                        <label for="quantity_5">Quantity:</label>
+                        <input type="number" name="quantity_5" value="0" min="0">
+                    </div>
+                </div>
+
+
+                <!-- Product 6 -->
+                <div class="wine-item">
+                    <img src="../Images/zinfandel.jpg" alt="Zinfandel">
+                    <div class="wine-info">
+                        <h4>Zinfandel</h4>
+                        <p class="price">$95.86</p>
+                        <input type="hidden" name="product_name_6" value="Zinfandel">
+                        <input type="hidden" name="product_price_6" value="95.86">
+                        <label for="quantity_6">Quantity:</label>
+                        <input type="number" name="quantity_6" value="0" min="0">
+                    </div>
+                </div>
+
+
+                <!-- Product 7 -->
+                <div class="wine-item">
+                    <img src="../Images/grenache.jpg" alt="Grenache">
+                    <div class="wine-info">
+                        <h4>Grenache</h4>
+                        <p class="price">$65.55</p>
+                        <input type="hidden" name="product_name_7" value="Grenache">
+                        <input type="hidden" name="product_price_7" value="65.55">
+                        <label for="quantity_7">Quantity:</label>
+                        <input type="number" name="quantity_7" value="0" min="0">
+                    </div>
+                </div>
+
+
+                <!-- Product 8 -->
+                <div class="wine-item">
+                    <img src="../Images/reisling.jpg" alt="Reisling">
+                    <div class="wine-info">
+                        <h4>Reisling</h4>
+                        <p class="price">$167.00</p>
+                        <input type="hidden" name="product_name_8" value="Reisling">
+                        <input type="hidden" name="product_price_8" value="167.00">
+                        <label for="quantity_8">Quantity:</label>
+                        <input type="number" name="quantity_8" value="0" min="0">
+                    </div>
+                </div>
+            </div>
+            <!-- Submit button -->
+            <br>
+            <input type="submit" class="bill-button" value="Bill">
+            <!-- More products... -->
+        </div>
+    </form>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 The Wine Shop. All rights reserved.</p>
+            <p>Contact us: info@wineshop.com | +123 456 7890</p>
+        </div>
+    </footer>
+</body>
+
+</html>

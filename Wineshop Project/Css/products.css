@@ -1,0 +1,98 @@
+.quantity-selector {
+  margin: 10px 0;
+}
+
+.quantity-selector input {
+  width: 40px;
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: white;
+}
+
+.wine-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.wine-item {
+  width: 220px;
+  text-align: center;
+  margin: 15px;
+}
+
+.wine-item img {
+  width: 200px; /* Set a fixed width */
+  height: 300px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image scales without distortion */
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.wine-item img:hover {
+  transform: scale(1.1);
+}
+
+.wine-info {
+  margin-top: 10px;
+}
+
+.wine-info h4 {
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.wine-info p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.price {
+  color: #8b0a50;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.btn-add {
+  background-color: #8b0a50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-add:hover {
+  background-color: #a83a65;
+}
+
+.wine-title {
+  display: block;
+  margin: 10px 0;
+  color: grey;
+  font-size: 0.8em;
+}
+
+#address {
+  margin-top: 30px;
+}
+
+.customer-info {
+  padding-left: 550px;
+}
+
+.h3 {
+  padding-left: 50px;
+}
+
+.customer-info name {
+  padding-left: 50px;
+}

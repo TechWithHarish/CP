@@ -1,0 +1,91 @@
+<html>
+<head>
+    <title>Beauty Parlour Management</title>
+    <link rel="stylesheet" href="../STYLES/style5.css">
+</head>
+<body>
+    <div>
+        <section id="appointments">
+            <center>
+                <h2><u>Book an Appointment</u></h2>
+                <form name="f" method="post" action="../APPOINTMENTS/appointment2sasp.asp" onsubmit="return calculateRates()">
+                    <label for="CName">Name:</label>
+                    <input type="text" id="name" name="n" required><br>
+    
+                    <label for="Email">Email:</label>
+                    <input type="email" id="email" name="e" required><br>
+    
+                    <label>Select Services:</label>
+                    <div class="services-container">
+                        <div class="service-item">
+                            <input type="checkbox" class="service" id="haircut" name="ss" value="Haircut - $30" data-rate="30">
+                            <label for="haircut">Haircut - $30</label>
+                        </div>
+                        <div class="service-item">
+                            <input type="checkbox" class="service" id="facial" name="ss" value="Facial - $40" data-rate="40">
+                            <label for="facial">Facial - $40</label>
+                        </div>
+                        <div class="service-item">
+                            <input type="checkbox" class="service" id="manicure" name="ss" value="Manicure & Pedicure - $50" data-rate="50">
+                            <label for="manicure">Manicure & Pedicure - $50</label>
+                        </div>
+                        <div class="service-item">
+                            <input type="checkbox" class="service" id="hairstyling" name="ss" value="Hair Styling - $45" data-rate="45">
+                            <label for="hairstyling">Hair Styling - $45</label>
+                        </div>
+                        <div class="service-item">
+                            <input type="checkbox" class="service" id="threading" name="ss" value="Threading - $15" data-rate="15">
+                            <label for="threading">Threading - $15</label>
+                        </div>
+                        <div class="service-item">
+                            <input type="checkbox" class="service" id="spa" name="ss" value="Spa treatments - $60" data-rate="60">
+                            <label for="spa">Spa treatments - $60</label>
+                        </div>
+                        <div class="service-item">
+                            <input type="checkbox" class="service" id="keratin" name="ss" value="Keratin - $100" data-rate="100">
+                            <label for="keratin">Keratin - $100</label>
+                        </div>
+                        <div class="service-item">
+                            <input type="checkbox" class="service" id="makeup" name="ss" value="Makeup - $80" data-rate="80">
+                            <label for="makeup">Makeup - $80</label>
+                        </div>
+                        <div class="service-item">
+                            <input type="checkbox" class="service" id="bridalmakeup" name="ss" value="Bridal Makeup - $200" data-rate="200">
+                            <label for="bridalmakeup">Bridal Makeup - $200</label>
+                        </div>
+                    </div>
+    
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="d" required><br>
+    
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" name="t" required><br>
+    
+                    <input type="hidden" name="rates" id="totalRates" value="0">
+    
+                    <center>
+                        <button type="submit">Book Now</button>
+                        <button type="reset">Reset</button>
+                    </center>
+                </form>
+            </center>
+        </section>
+    </div>
+    
+    <script>
+    function calculateRates() {
+        let total = 0;
+        const services = document.querySelectorAll('.service:checked');
+        
+        services.forEach(service => {
+            total += parseFloat(service.getAttribute('data-rate'));
+        });
+    
+        document.getElementById('totalRates').value = total;
+        
+        return true; // Allow form submission
+    }
+    </script>
+    
+</body>
+</html>

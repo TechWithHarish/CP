@@ -1,0 +1,65 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2; /* Light pink background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #ff4da6; /* Dark pink for heading */
+    font-size: 28px;
+}
+
+p {
+    font-size: 18px;
+    color: #444;
+}
+
+strong {
+    color: #ff3399; /* Bold pink color for labels */
+}
+
+/* Centering and Section Styling */
+#confirmation {
+    background-color: #fff0f5; /* Very light pink */
+    border: 1px solid #ffb3d9; /* Soft pink border */
+    border-radius: 10px;
+    width: 50%;
+    margin: 50px auto;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+center {
+    text-align: center;
+}
+
+/* Spacing for the form items */
+p {
+    margin: 10px 0;
+}
+
+/* Button Styling */
+button {
+    background-color: #ff4da6; /* Pink button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e60073; /* Darker pink on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #confirmation {
+        width: 80%;
+        padding: 20px;
+    }
+}

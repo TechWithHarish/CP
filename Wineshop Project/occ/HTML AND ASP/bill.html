@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Booking Confirmation</title>
+    <link rel="stylesheet" href="style4.css">
+    <script>
+        // Function to get query parameters from URL
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            let services = params.getAll("s[]");  // Fetch all selected services
+            let name = params.get("n");
+            let email = params.get("e");
+            let date = params.get("d");
+            let time = params.get("t");
+
+            // Calculate total amount
+            let totalAmount = 0;
+            services.forEach(service => {
+                let price = parseFloat(service.split(" - $")[1]); // Extract price from string
+                totalAmount += price;
+            });
+
+            // Display the information
+            document.getElementById('name').textContent = Name;
+            document.getElementById('email').textContent = Email;
+            document.getElementById('date').textContent = Date;
+            document.getElementById('time').textContent = Time;
+            document.getElementById('services').textContent = services.join(", ");
+            document.getElementById('totalAmount').textContent = "$" + totalAmount.toFixed(2);
+        }
+
+        // Call the function when the page loads
+        window.onload = getQueryParams;
+    </script>
+</head>
+<body>
+
+</body>
+</html>
